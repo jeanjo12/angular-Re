@@ -1,1 +1,13 @@
 <p>Listado</p>
+<ul>
+  <li *ngFor="let heroe of heroe">
+    {{ heroe }}
+  </li>
+</ul>
+
+<div>
+  <h3>Heroe Borrado</h3>
+  <span> {{ heroeBorrado }} </span>
+</div>
+
+<button (click)="borar()">Borarr</button>

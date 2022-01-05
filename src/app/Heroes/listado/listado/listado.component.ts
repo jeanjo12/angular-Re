@@ -5,5 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: 'listado.component.html',
 })
 export class ListadoComponent {
-  heroe: string[] = [];
+  heroe: string[] = [
+    'Naruto',
+    'Goku',
+    'Baseball',
+    'Batman',
+    'Iroman',
+    'Spiderman',
+  ];
+
+  heroeBorrado: string;
+
+  borar() {
+    this.heroeBorrado = this.heroe.pop() || '';
+  }
 }
