@@ -14,7 +14,7 @@ export class ListadoComponent {
     'Spiderman',
   ];
 
-  heroeBorrado: string;
+  heroeBorrado: string = '';
 
   borar() {
     this.heroeBorrado = this.heroe.pop() || '';

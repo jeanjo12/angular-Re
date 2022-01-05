@@ -1,6 +1,7 @@
-<div>
-  <h3>Heroe Borrado</h3>
-  <span> {{ heroeBorrado }} </span>
+<div *ngIf="heroeBorrado !== ''">
+  <h3>
+    Heroe Borrado: <small> {{ heroeBorrado }} </small>
+  </h3>
 </div>
 
 <button (click)="borar()">Borarr</button>
